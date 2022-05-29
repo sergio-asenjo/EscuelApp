@@ -1,7 +1,7 @@
 {
   "name": "EscuelApp",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
+  "version": "1.0",
+  "author": "EscuelApp-GestionAgil",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
