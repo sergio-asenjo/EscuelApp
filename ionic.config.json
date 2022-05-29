@@ -1,0 +1,7 @@
+{
+  "name": "EscuelApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
