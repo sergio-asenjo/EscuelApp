@@ -23,7 +23,38 @@ const routes: Routes = [
     path: 'apoderado/horario',
     loadChildren: () => import('./paginas/apoderado/horario/horario.module').then( m => m.HorarioPageModule)
   },
-
+  {
+    path: 'apoderado/notas',
+    loadChildren: () => import('./paginas/apoderado/notas/notas.module').then( m => m.NotasPageModule)
+  },
+  {
+    path: 'apoderado/mensajes',
+    loadChildren: () => import('./paginas/apoderado/mensajes/mensajes.module').then( m => m.MensajesPageModule)
+  },
+  {
+    path: 'apoderado/informacion',
+    loadChildren: () => import('./paginas/apoderado/informacion/informacion.module').then( m => m.InformacionPageModule)
+  },
+  {
+    path: 'profesor/subir-notas',
+    loadChildren: () => import('./paginas/profesor/subir-notas/subir-notas.module').then( m => m.SubirNotasPageModule)
+  },
+  {
+    path: 'profesor/mandar-correo',
+    loadChildren: () => import('./paginas/profesor/mandar-correo/mandar-correo.module').then( m => m.MandarCorreoPageModule)
+  },
+  {
+    path: 'profesor/clases',
+    loadChildren: () => import('./paginas/profesor/clases/clases.module').then( m => m.ClasesPageModule)
+  },
+  {
+    path: 'profesor/pasar-asistencia',
+    loadChildren: () => import('./paginas/profesor/pasar-asistencia/pasar-asistencia.module').then( m => m.PasarAsistenciaPageModule)
+  },
+  {
+    path: 'profesor/anotaciones',
+    loadChildren: () => import('./paginas/profesor/anotaciones/anotaciones.module').then( m => m.AnotacionesPageModule)
+  },
 ];
 
 @NgModule({
