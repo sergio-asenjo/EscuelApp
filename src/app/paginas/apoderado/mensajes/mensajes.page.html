@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>mensajes</ion-title>
+    <ion-title>Mensajes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-item>
+    <ion-label>Profesor</ion-label>
+    <ion-select ok-text="Seleccionar" cancel-text="Cancelar">
+      <ion-select-option value="Ramón Salazar">Ramón Salazar</ion-select-option>
+      <ion-select-option value="Germán Garmendia">Germán Garmendia</ion-select-option>
+      <ion-select-option value="Dylan Silva">Dylan Silva</ion-select-option>
+      <ion-select-option value="Alexis Sánchez">Alexis Sánchez</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-input placeholder="Asunto"></ion-input>
+  
+  <ion-input placeholder="Escriba un mensaje..."></ion-input>
+  <ion-button>
+    <ion-icon name="attach-outline"></ion-icon>
+  </ion-button>
+  <ion-button>
+    <ion-icon name="images-outline"></ion-icon>
+  </ion-button>
+  <ion-button>Enviar</ion-button>
 
 </ion-content>
