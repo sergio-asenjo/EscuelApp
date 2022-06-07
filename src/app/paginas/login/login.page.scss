@@ -1,0 +1,70 @@
+.contenido {
+  --background: url(/assets/pattern.png) repeat;
+}
+
+.contenedor-inputs {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .contenedor-logo {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    .logo {
+      color: white;
+      font-size: 150px;
+    }
+  
+    .label-logo {
+      color: white;
+      font-weight: 700;
+    }
+  }
+
+  .item-input {
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 2px;
+  }
+
+  .item-input-error {
+    --border-color: var(--ion-color-danger);
+  }
+
+  ion-row {
+    width: 100%;
+  }
+
+  .contenedor-label-error {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .label-error {
+      font-weight: 600;
+      color: white;
+    }
+  }
+
+  .contenedor-boton {
+    width: 80%;
+  }
+
+  .contenedor-recuperar {
+    padding-top: 20px;
+
+    .item {
+      --background: transparent;
+
+      .label-recuperar {
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+}
