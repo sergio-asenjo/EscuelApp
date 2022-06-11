@@ -1,0 +1,51 @@
+ion-toolbar {
+  --background: #0077b6;
+  --min-height: 70px;
+  border-radius: 0% 0% 30% 30%;
+
+  ion-title {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+ion-card:nth-child(odd) {
+  --background: #ade8f4;
+}
+
+ion-card:nth-child(even) {
+  --background: #caf0f8;
+}
+
+ion-card-title {
+  font-size: 20px;
+}
+
+ion-checkbox {
+  --background-checked: #0077b6;
+}
+
+.contenedor-labels {
+  padding: 15px 15px 0 15px;
+
+  .label-clase {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .label-fecha {
+    font-size: 16px;
+    font-weight: 300;
+    color: #666666;
+  }
+}
+
+.label-campo {
+  font-weight: 600;
+}
+
+ion-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: 10px;
+}

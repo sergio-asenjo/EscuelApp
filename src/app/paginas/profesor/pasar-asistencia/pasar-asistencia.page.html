@@ -1,9 +1,85 @@
-<ion-header>
+<ion-header mode="ios">
   <ion-toolbar>
-    <ion-title>pasar-asistencia</ion-title>
+    <ion-title>Asistencia | Cursos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ng-container *ngIf="!esMostrarAlumnos">
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Lenguaje y Comunicación')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico | Sala 12B</ion-card-subtitle>
+        <ion-card-title>Lenguaje y Comunicación</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        08:00 ─ 09:15
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Matemáticas')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico | Sala 12B</ion-card-subtitle>
+        <ion-card-title>Matemáticas</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        09:30 ─ 10:45
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Ciencias Naturales')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico | Sala 12B</ion-card-subtitle>
+        <ion-card-title>Ciencias Naturales</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        11:00 ─ 13:00
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Inglés')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico | Sala 12B</ion-card-subtitle>
+        <ion-card-title>Inglés</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        14:00 ─ 15:15
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Historia')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico | Sala 12B</ion-card-subtitle>
+        <ion-card-title>Historia</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        15:30 ─ 16:45
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+
+  <ng-container *ngIf="esMostrarAlumnos">
+
+    <div class="contenedor-labels">
+      <ion-label class="label-clase">{{ clase }}</ion-label><br>
+      <ion-label class="label-fecha">{{ fechaHoy | date:'medium' }}</ion-label>
+    </div>
+
+    <ion-list>
+      <ion-item>
+        <ion-label class="label-campo ion-text-left">Alumnos</ion-label>
+        <ion-label class="label-campo ion-text-right">Asistencia</ion-label>
+      </ion-item>
+      <ion-item *ngFor="let alumno of listadoAlumnos">
+        <ion-label>{{alumno.nombre}}</ion-label>
+        <ion-checkbox mode="ios" slot="end" [(ngModel)]="alumno.esAsistio"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <ion-button (click)="registrarAsistencia()" mode="ios" expand="full" fill="solid" shape="round">
+      Registrar Asistencia
+    </ion-button>
+
+  </ng-container>
 
 </ion-content>
