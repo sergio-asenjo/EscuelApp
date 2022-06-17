@@ -1,9 +1,103 @@
-<ion-header>
+<ion-header mode="ios" translucent="true">
   <ion-toolbar>
-    <ion-title>subir-notas</ion-title>
+    <ion-title>Notas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ng-container *ngIf="!esMostrarAlumnos">
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Lenguaje y Comunicación')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico</ion-card-subtitle>
+        <ion-card-title>Lenguaje y Comunicación</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Matemáticas')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico</ion-card-subtitle>
+        <ion-card-title>Matemáticas</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Ciencias Naturales')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico</ion-card-subtitle>
+        <ion-card-title>Ciencias Naturales</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Inglés')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico</ion-card-subtitle>
+        <ion-card-title>Inglés</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  
+    <ion-card button mode="ios" (click)="mostrarAlumnos('Historia')">
+      <ion-card-header>
+        <ion-card-subtitle>8° Básico</ion-card-subtitle>
+        <ion-card-title>Historia</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ng-container>
+
+  <ng-container *ngIf="esMostrarAlumnos">
+
+    <div class="contenedor-labels">
+      <ion-label class="label-clase">{{ clase }}</ion-label><br>
+      <ion-label class="label-fecha">{{ fechaHoy | date:'medium' }}</ion-label>
+    </div>
+
+    <ion-grid fixed class="ion-no-padding">
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="floating">Descripción</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item>
+            <ion-label position="floating">Puntaje Máximo</ion-label>
+            <ion-input type="number" [(ngModel)]="puntajeMaximo"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item>
+            <ion-label position="floating">Porcentaje</ion-label>
+            <ion-input type="number" [(ngModel)]="porcentajeExigencia"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-accordion-group>
+
+      <ion-accordion *ngFor="let alumno of listadoAlumnos">
+
+        <ion-item slot="header">
+          <ion-label>{{ alumno.nombre }} | <b>Nota: {{ calcularNota(alumno.puntaje) | number:'1.2-2' }}</b></ion-label>
+        </ion-item>
+    
+        <ion-list slot="content" class="ion-no-padding">
+          <ion-item>
+            <ion-label class="label-puntaje" position="fixed">Puntaje Obtenido :</ion-label>
+            <ion-input [(ngModel)]="alumno.puntaje"></ion-input>
+          </ion-item>
+        </ion-list>
+
+      </ion-accordion>
+
+    </ion-accordion-group>
+
+    <ion-button (click)="guardarNotas()" mode="ios" expand="full" fill="solid" shape="round">
+      Guardar Registro de Notas
+    </ion-button>
+
+  </ng-container>
 
 </ion-content>

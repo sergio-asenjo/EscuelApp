@@ -5,39 +5,797 @@
 </ion-header>
 
 <ion-content>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ColegioAPP</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Asignaturas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tareas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Notas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Horario</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <p class="ion-text-capitalize ion-padding-start">nombre alumno</p>
-  <p class="ion-text-capitalize ion-padding-start">Año | Curso</p>
+  <main class="container">
+    <img src="assets/363.jpg" style="width: 100%" />
 
-  <ion-card button="true" class="tarjeta-horario">
-    <ion-card-header>
-      <ion-card-title>Lunes</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      17:00 - 18:00 Gestión Agil <br>
-      18:01 - 19:00 Otro ramo
-    </ion-card-content>
-  </ion-card>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="my-3 p-3 bg-body rounded shadow-sm" bis_skin_checked="1">
+          <h6 class="border-bottom pb-2 mb-0">Información del alumno</h6>
+          <div class="d-flex text-muted pt-3" bis_skin_checked="1">
+            <svg
+              class="bd-placeholder-img flex-shrink-0 me-2 rounded"
+              width="32"
+              height="32"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 32x32"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#007bff"></rect>
+              <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+            </svg>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Martes</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      17:00 - 18:00 Gestión Agil
-    </ion-card-content>
-  </ion-card>
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Nombre</strong>
+              Julían Torres
+            </p>
+          </div>
+          <div class="d-flex text-muted pt-3" bis_skin_checked="1">
+            <svg
+              class="bd-placeholder-img flex-shrink-0 me-2 rounded"
+              width="32"
+              height="32"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 32x32"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#e83e8c"></rect>
+              <text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text>
+            </svg>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Miércoles</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      17:00 - 18:00 Gestión Agil
-    </ion-card-content>
-  </ion-card>
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Correo</strong>
+              julian.torres@gmail.com
+            </p>
+          </div>
+          <div class="d-flex text-muted pt-3" bis_skin_checked="1">
+            <svg
+              class="bd-placeholder-img flex-shrink-0 me-2 rounded"
+              width="32"
+              height="32"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 32x32"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#6f42c1"></rect>
+              <text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text>
+            </svg>
 
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Curso</strong>
+              2do Medio A
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="my-3 p-3 bg-body rounded shadow-sm" bis_skin_checked="1">
+          <h6 class="border-bottom pb-2 mb-0">Avatar del alumno</h6>
+          <div class="d-flex text-muted pt-3" bis_skin_checked="1">
+            <img
+              src="assets/alumno.png"
+              class="img-fluid rounded-start"
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 31.3%;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="container" style="margin-bottom: 40px">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="bg-primary btn btn-block"
+            type="button"
+            style="
+              color: white;
+              width: 100%;
+              text-align: left;
+              font-size: 22px;
+              padding: 15px;
+            "
+          >
+            <i class="fa fa-clock-o" style="margin-right: 10px"></i> Horarios
+          </button>
+        </h2>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            style="border-left: 5px solid #4a83fd"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <strong>Lunes</strong>
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/arte.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Arte</h5>
+                    <p class="card-text">Profesor/a: Rodolfo Castillo</p>
+                    <p class="card-text">
+                      <small class="text-muted">10:00 - 11:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/biologia.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Biología</h5>
+                    <p class="card-text">Profesor/a: Pedro Valenzuela</p>
+                    <p class="card-text">
+                      <small class="text-muted">11:15 - 12:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/filosofia.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Filosofía</h5>
+                    <p class="card-text">Profesor/a: Ingrid Vega</p>
+                    <p class="card-text">
+                      <small class="text-muted">12:15 - 13:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/fisica.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Física</h5>
+                    <p class="card-text">Profesor/a: Manuel Carrasco</p>
+                    <p class="card-text">
+                      <small class="text-muted">13:15 - 14:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            style="border-left: 5px solid #4a83fd"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <strong>Martes</strong>
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/geografia.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Geografía</h5>
+                    <p class="card-text">Profesor/a: Marcelo Reyes</p>
+                    <p class="card-text">
+                      <small class="text-muted">10:00 - 11:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/historia.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Historia</h5>
+                    <p class="card-text">Profesor/a: Antonio Durán</p>
+                    <p class="card-text">
+                      <small class="text-muted">11:15 - 12:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/informatica.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Informática</h5>
+                    <p class="card-text">Profesor/a: Juan Valdés</p>
+                    <p class="card-text">
+                      <small class="text-muted">12:15 - 13:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/ingles.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Inglés</h5>
+                    <p class="card-text">Profesor/a: Manuel Carrasco</p>
+                    <p class="card-text">
+                      <small class="text-muted">13:15 - 14:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button
+            class="accordion-button collapsed"
+            style="border-left: 5px solid #4a83fd"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse3"
+            aria-expanded="false"
+            aria-controls="collapse3"
+          >
+            <strong>Miércoles</strong>
+          </button>
+        </h2>
+        <div
+          id="collapse3"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading3"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/lectura.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Lectura</h5>
+                    <p class="card-text">Profesor/a: María Blanco</p>
+                    <p class="card-text">
+                      <small class="text-muted">10:00 - 11:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/matematicas.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Matemáticas</h5>
+                    <p class="card-text">Profesor/a: Pedro Pérez</p>
+                    <p class="card-text">
+                      <small class="text-muted">11:15 - 12:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/quimica.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Química</h5>
+                    <p class="card-text">Profesor/a: Rodrigo Salamanca</p>
+                    <p class="card-text">
+                      <small class="text-muted">12:15 - 13:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/religion.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Religión</h5>
+                    <p class="card-text">Profesor/a: Jesús López</p>
+                    <p class="card-text">
+                      <small class="text-muted">13:15 - 14:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+          <button
+            class="accordion-button collapsed"
+            style="border-left: 5px solid #4a83fd"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse4"
+            aria-expanded="false"
+            aria-controls="collapse4"
+          >
+            <strong>Jueves</strong>
+          </button>
+        </h2>
+        <div
+          id="collapse4"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading4"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/historia.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Historia</h5>
+                    <p class="card-text">Profesor/a: Antonio Durán</p>
+                    <p class="card-text">
+                      <small class="text-muted">10:00 - 11:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/geografia.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Geografía</h5>
+                    <p class="card-text">Profesor/a: Marcelo Reyes</p>
+                    <p class="card-text">
+                      <small class="text-muted">11:15 - 12:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/fisica.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Física</h5>
+                    <p class="card-text">Profesor/a: Manuel Carrasco</p>
+                    <p class="card-text">
+                      <small class="text-muted">12:15 - 13:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/biologia.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Biología</h5>
+                    <p class="card-text">Profesor/a: Pedro Valenzuela</p>
+                    <p class="card-text">
+                      <small class="text-muted">13:15 - 14:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+          <button
+            class="accordion-button collapsed"
+            style="border-left: 5px solid #4a83fd"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse5"
+            aria-expanded="false"
+            aria-controls="collapse5"
+          >
+            <strong>Viernes</strong>
+          </button>
+        </h2>
+        <div
+          id="collapse5"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading5"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/informatica.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Informática</h5>
+                    <p class="card-text">Profesor/a: Juan Valdés</p>
+                    <p class="card-text">
+                      <small class="text-muted">10:00 - 11:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/ingles.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Inglés</h5>
+                    <p class="card-text">Profesor/a: Manuel Carrasco</p>
+                    <p class="card-text">
+                      <small class="text-muted">11:15 - 12:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/lectura.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Lectura</h5>
+                    <p class="card-text">Profesor/a: María Blanco</p>
+                    <p class="card-text">
+                      <small class="text-muted">12:15 - 13:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="assets/quimica.png"
+                    class="img-fluid rounded-start"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;
+                      margin-top: 5%;
+                    "
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Química</h5>
+                    <p class="card-text">Profesor/a: Rodrigo Salamanca</p>
+                    <p class="card-text">
+                      <small class="text-muted">13:15 - 14:00</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
