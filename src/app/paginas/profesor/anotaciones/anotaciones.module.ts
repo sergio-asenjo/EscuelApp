@@ -18,3 +18,5 @@ import { AnotacionesPage } from './anotaciones.page';
   declarations: [AnotacionesPage]
 })
 export class AnotacionesPageModule {}
+
+
