@@ -1,0 +1,21 @@
+<ion-card class="contenedor-boton ion-no-margin" button="true" mode="ios" [ngStyle]="{'background-color': colorFondo}">
+
+  <ion-grid fixed class="contenedor-data ion-no-padding">
+
+    <!-- Icono -->
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-icon class="icono-modulo" [name]="iconoModulo"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <!-- Nombre Módulo -->
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-label class="nombre-modulo">{{ nombreModulo }}</ion-label>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-card>

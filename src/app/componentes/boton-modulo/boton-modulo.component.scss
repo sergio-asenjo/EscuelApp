@@ -1,0 +1,24 @@
+.contenedor-boton {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: none;
+
+  .contenedor-data {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+
+    .icono-modulo {
+      font-size: 60px;
+      color: white;
+    }
+
+    .nombre-modulo {
+      font-weight: 700;
+      color: white;
+    }
+  }
+}

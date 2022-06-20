@@ -1,0 +1,54 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 15px 10px 15px;
+
+  .contenedor-info-usuario {
+    border-top: 5px solid #3171e0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+
+    .avatar-usuario {
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .contenedor-label {
+      padding-top: 10px;
+
+      .separador {
+        width: 50vw;
+        margin: 5px auto;
+      }
+    }
+  }
+
+  .label-descripcion {
+    font-weight: 600;
+  }
+
+  .label-valor {
+    font-weight: 500;
+    color: #808080;
+  }
+
+  .contenedor-modulos {
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1) !important;
+    border-top: 5px solid #3171e0;
+
+    .label-titulo {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .contenedor-modulo {
+      padding: 10px;
+    }
+  }
+}

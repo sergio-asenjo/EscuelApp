@@ -1,0 +1,33 @@
+<div class="contenedor" [ngClass]="datosNotificacion.esRevisada ? 'not-revisada' : 'not-no-revisada'">
+  <ion-grid fixed class="ion-no-padding notificación">
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-badge slot="start" color="danger" *ngIf="!datosNotificacion.esRevisada">1</ion-badge>
+          <ion-grid fixed class="ion-no-padding">
+            <ion-row>
+              <ion-col size="12">
+                <ion-label class="titulo-label">{{ datosNotificacion.titulo }}</ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="12">
+                <ion-label class="clase-label">{{ datosNotificacion.clase }}</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-label>
+          {{ datosNotificacion.cuerpoNotificacion }}
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</div>

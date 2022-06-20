@@ -1,0 +1,29 @@
+<ion-accordion-group class="contenedor">
+  <ion-accordion
+    mode="ios"
+    *ngFor="let asignatura of notasAlumno"
+    [ngStyle]="{ 'border-top-color': asignatura.colorAsignatura }"
+    [value]="asignatura.nombreAsignatura"
+    toggle-icon="chevron-down-outline"
+    class="contendor-asignatura"
+  >
+    <!-- Nombre Asignatura. -->
+    <ion-item slot="header" lines="none">
+      <ion-label>{{ asignatura.nombreAsignatura }}</ion-label>
+    </ion-item>
+
+    <!-- Notas. -->
+    <ion-list slot="content" class="contenedor-notas">
+      <!-- Header. -->
+      <ion-item lines="none">
+        <ion-label class="ion-text-start"><b>Prueba</b></ion-label>
+        <ion-label class="ion-text-end"><b>Nota</b></ion-label>
+      </ion-item>
+      <!-- Descripción Prueba + Nota. -->
+      <ion-item *ngFor="let prueba of asignatura.notas" lines="none">
+        <ion-label class="ion-text-start">{{ prueba.nombrePrueba }}</ion-label>
+        <ion-label class="ion-text-end">{{ prueba.nota }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-accordion>
+</ion-accordion-group>

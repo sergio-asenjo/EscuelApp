@@ -1,0 +1,25 @@
+.contenedor-mensajes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  height: 100%;
+
+  .label-titulo {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .descripcion {
+    font-size: 14px;
+    color: #a0a0a0;
+  }
+
+  .item {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+  }
+
+  .contenedor-botones {
+    height: 100%;
+  }
+}

@@ -1,31 +1,35 @@
+.contenedor-tabla {
+  padding: 10px;
+}
 
-.title_container-div{
-    background: blue;
+.contenedor-info-usuario {
+  border-top: 5px solid #3171e0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+
+  .avatar-usuario {
     margin: 0 auto;
-    padding: 1rem;
-    
-}
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.2) !important;
+  }
 
-.ion-card{
-    margin: 1rem ;
-    padding: 0;
-    
-    .ion-card-header{
-        padding: 0;
+  .contenedor-label {
+    padding-top: 10px;
+
+    .separador {
+      width: 50vw;
+      margin: 5px auto;
     }
+  }
 }
 
-table{
-    width: 100%;
-    margin-top: 10px;
-    border-collapse: collapse;
-    text-align: left;
-
-    td{
-        padding: 10px;
-        border-bottom: 1px solid rgb(235, 235, 235);
-    }
-
+.label-descripcion {
+  font-weight: 600;
 }
 
-
+.label-valor {
+  font-weight: 500;
+  color: #808080;
+}

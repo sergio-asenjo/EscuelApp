@@ -1,3 +1,4 @@
+import { SharedModule } from 'src/app/componentes/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { InicioPage } from './inicio.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    InicioPageRoutingModule
+    InicioPageRoutingModule,
+    SharedModule
   ],
   declarations: [InicioPage]
 })

@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inicio</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<header tituloPagina="Inicio"></header>
 <ion-content>
+
+  <ion-grid fixed class="ion-no-padding contenedor">
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-img src="assets/363.jpg"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-label class="label-descripcion">Colegio</ion-label><br>
+        <ion-label class="label-valor">Liceo DuocUC</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <!-- Info Usuario -->
+    <ion-row class="ion-text-center contenedor-info-usuario">
+      <ion-col size="12">
+        <ion-avatar class="avatar-usuario">
+          <img src="https://avatars.dicebear.com/api/miniavs/dsxcvzqertfgghb.svg" />
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="12" class="contenedor-label ion-text-center">
+        <ion-label class="label-descripcion">Profesor(a)</ion-label><br>
+        <ion-label class="label-valor">Gustavo Duran</ion-label>
+        <hr class="separador">
+        <ion-label class="label-descripcion">Curso | Profesor Jefe</ion-label><br>
+        <ion-label class="label-valor">3° Medio C</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-grid fixed class="ion-no-padding contenedor-modulos">
+
+      <ion-row class="ion-text-center">
+        <ion-col size="12">
+          <ion-label class="label-titulo">Módulos de Profesores</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="contenedor-modulo" size="6">
+          <boton-modulo routerLink="/profesor/anotaciones" colorFondo="#ed576b" iconoModulo="pencil-outline" nombreModulo="Anotaciones"></boton-modulo>
+        </ion-col>
+        <ion-col class="contenedor-modulo" size="6">
+          <boton-modulo routerLink="/profesor/clases" colorFondo="#50c8ff" iconoModulo="school-outline" nombreModulo="Clases"></boton-modulo>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="contenedor-modulo" size="6">
+          <boton-modulo routerLink="/profesor/mandar-correo" colorFondo="#6370ff" iconoModulo="mail-outline" nombreModulo="Enviar Correo"></boton-modulo>
+        </ion-col>
+        <ion-col class="contenedor-modulo" size="6">
+          <boton-modulo routerLink="/profesor/pasar-asistencia" colorFondo="#ffca22" iconoModulo="checkmark-circle-outline" nombreModulo="Asistencia"></boton-modulo>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="contenedor-modulo" size="12">
+          <boton-modulo routerLink="/profesor/subir-notas" colorFondo="#42d77d" iconoModulo="clipboard-outline" nombreModulo="Notas Alumnos"></boton-modulo>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+
+  </ion-grid>
 
 </ion-content>

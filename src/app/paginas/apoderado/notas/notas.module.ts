@@ -1,3 +1,4 @@
+import { SharedModule } from './../../../componentes/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { NotasPage } from './notas.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    NotasPageRoutingModule
+    NotasPageRoutingModule,
+    SharedModule
   ],
   declarations: [NotasPage]
 })

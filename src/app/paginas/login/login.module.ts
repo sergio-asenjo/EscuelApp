@@ -1,4 +1,3 @@
-import { FormularioComponent } from './../../componentes/formulario/formulario.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -17,6 +16,6 @@ import { LoginPage } from './login.page';
     LoginPageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [LoginPage, FormularioComponent]
+  declarations: [LoginPage]
 })
 export class LoginPageModule {}
