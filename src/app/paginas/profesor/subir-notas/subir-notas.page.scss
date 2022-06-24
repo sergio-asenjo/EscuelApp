@@ -13,13 +13,7 @@ ion-card-title {
   font-size: 20px;
 }
 
-ion-card:nth-child(odd) {
-  --background: #ade8f4;
-}
 
-ion-card:nth-child(even) {
-  --background: #caf0f8;
-}
 
 .contenedor-labels {
   padding: 15px 15px 0 15px;
@@ -44,5 +38,12 @@ ion-card:nth-child(even) {
 ion-button {
   margin-top: 30px;
   margin-bottom: 30px;
-  margin: 10px;
+  margin: 20px auto;
+  display: block;
+  width: 300px;
+
+}
+
+.notas{
+  padding: 2rem;
 }

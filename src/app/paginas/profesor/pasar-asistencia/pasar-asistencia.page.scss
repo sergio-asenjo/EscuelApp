@@ -9,13 +9,8 @@ ion-toolbar {
   }
 }
 
-ion-card:nth-child(odd) {
-  --background: #ade8f4;
-}
 
-ion-card:nth-child(even) {
-  --background: #caf0f8;
-}
+
 
 ion-card-title {
   font-size: 20px;
@@ -26,7 +21,7 @@ ion-checkbox {
 }
 
 .contenedor-labels {
-  padding: 15px 15px 0 15px;
+  padding: 1rem 3rem;
 
   .label-clase {
     font-size: 20px;
@@ -48,4 +43,12 @@ ion-button {
   margin-top: 30px;
   margin-bottom: 30px;
   margin: 10px;
+  border-radius: 8px;
+  display: block;
+  width: 300px;
+  margin : 20px auto;
+}
+
+.item-asistencia{
+  padding: 2rem;
 }

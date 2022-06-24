@@ -71,7 +71,7 @@
       </ion-row>
     </ion-grid>
 
-    <ion-accordion-group>
+    <ion-accordion-group class="notas">
 
       <ion-accordion *ngFor="let alumno of listadoAlumnos">
 
@@ -79,7 +79,7 @@
           <ion-label>{{ alumno.nombre }} | <b>Nota: {{ calcularNota(alumno.puntaje) | number:'1.2-2' }}</b></ion-label>
         </ion-item>
     
-        <ion-list slot="content" class="ion-no-padding">
+        <ion-list slot="content" >
           <ion-item>
             <ion-label class="label-puntaje" position="fixed">Puntaje Obtenido :</ion-label>
             <ion-input [(ngModel)]="alumno.puntaje"></ion-input>
@@ -90,7 +90,7 @@
 
     </ion-accordion-group>
 
-    <ion-button (click)="guardarNotas()" mode="ios" expand="full" fill="solid" shape="round">
+    <ion-button (click)="guardarNotas()" >
       Guardar Registro de Notas
     </ion-button>
 

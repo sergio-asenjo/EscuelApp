@@ -1,4 +1,4 @@
-<header tituloPagina="Asitencia"></header>
+<header tituloPagina="Asistencia"></header>
 
 <ion-content>
 
@@ -61,7 +61,7 @@
       <ion-label class="label-fecha">{{ fechaHoy | date:'medium' }}</ion-label>
     </div>
 
-    <ion-list>
+    <ion-list class="item-asistencia">
       <ion-item>
         <ion-label class="label-campo ion-text-left">Alumnos</ion-label>
         <ion-label class="label-campo ion-text-right">Asistencia</ion-label>
@@ -72,7 +72,7 @@
       </ion-item>
     </ion-list>
 
-    <ion-button (click)="registrarAsistencia()" mode="ios" expand="full" fill="solid" shape="round">
+    <ion-button (click)="registrarAsistencia()"  >
       Registrar Asistencia
     </ion-button>
 
