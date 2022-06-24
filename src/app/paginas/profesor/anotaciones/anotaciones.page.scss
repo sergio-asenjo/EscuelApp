@@ -1,0 +1,31 @@
+ion-toolbar {
+    --background: #0077b6;
+    --min-height: 70px;
+    text-align: center;
+  
+  
+    ion-title {
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+.contenedor-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    height: 100%;
+}
+
+  .item {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+
+    
+  }
+
+  ion-button{
+    display: block;
+    width: 300px;
+    margin : 0 auto;
+  }

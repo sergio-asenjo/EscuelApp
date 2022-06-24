@@ -8,12 +8,16 @@ import { ClasesPageRoutingModule } from './clases-routing.module';
 
 import { ClasesPage } from './clases.page';
 
+import { SharedModule } from 'src/app/componentes/shared.module';
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ClasesPageRoutingModule
+    ClasesPageRoutingModule,
+    SharedModule
   ],
   declarations: [ClasesPage]
 })

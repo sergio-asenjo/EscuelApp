@@ -1,42 +1,58 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Anotaciones</ion-title>
-  </ion-toolbar>
-</ion-header>
+<header tituloPagina="Anotaciones"></header>
 
 <ion-content>
 
-  <fieldset>
+ <ion-grid class="contenedor-form">
+   <fieldset>
     <h1>Anotaciones el alumno</h1>
-    <label>
-      Nombre y apellidos
-      <input type="text" name="nombre">
-
-    </label>
-    <label>
-      Número de clase
-      <input type="number" name="numero">
-    </label>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item clas="item">
+          <ion-label position="floating">Nombre completo</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+   
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="item">
+          <ion-label>Selecciona curso</ion-label>
+          <ion-select class="custom-options" multiple="true">
+            <ion-select-option value="brown">1ro Basico</ion-select-option>
+            <ion-select-option value="blonde">3ro Basico</ion-select-option>
+            <ion-select-option value="black">4to Basico</ion-select-option>
+            <ion-select-option value="red">5to basico</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="item">
+          <ion-label>Tipo Anotacion</ion-label>
+          <ion-select class="custom-options" multiple="true">
+            <ion-select-option value="brown">Positiva</ion-select-option>
+            <ion-select-option value="blonde">Negativa</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+   <ion-row>
+    <ion-col size="12">
+      <ion-item class="item">
+        <ion-label position="floating">Anotaciones</ion-label>
+        <ion-textarea type="tel-area-code"></ion-textarea>
+      </ion-item>
+    </ion-col>
+   </ion-row>
   </fieldset>
 
-  <ion-item>
-    <ion-label>anotacion?</ion-label>
-    <ion-select interface="popover">
-      <ion-select-option value="Positiva">Positiva</ion-select-option>
-      <ion-select-option value="Negativa">Negativa</ion-select-option>
-    </ion-select>
-  </ion-item>
-
-  <fieldset>
-    <label>
-      Anotaciones:
-      <textarea name="anotaciones"></textarea>
-    </label>
-  </fieldset>
 
   <section>
-    <ion-button expand="block">Aceptar</ion-button>
+    <ion-button >Enviar anotacion</ion-button>
   </section>
+ </ion-grid>
 
 </ion-content>
 

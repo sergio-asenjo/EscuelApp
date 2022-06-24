@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { SubirNotasPageRoutingModule } from './subir-notas-routing.module';
 
 import { SubirNotasPage } from './subir-notas.page';
+import { SharedModule } from 'src/app/componentes/shared.module';
+
 
 @NgModule({
   imports: [
@@ -14,6 +16,7 @@ import { SubirNotasPage } from './subir-notas.page';
     FormsModule,
     IonicModule,
     SubirNotasPageRoutingModule
+    ,SharedModule
   ],
   declarations: [SubirNotasPage]
 })

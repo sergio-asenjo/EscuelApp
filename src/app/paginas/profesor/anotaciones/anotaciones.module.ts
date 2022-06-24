@@ -8,12 +8,15 @@ import { AnotacionesPageRoutingModule } from './anotaciones-routing.module';
 
 import { AnotacionesPage } from './anotaciones.page';
 
+import { SharedModule } from 'src/app/componentes/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AnotacionesPageRoutingModule
+    AnotacionesPageRoutingModule,
+    SharedModule
   ],
   declarations: [AnotacionesPage]
 })

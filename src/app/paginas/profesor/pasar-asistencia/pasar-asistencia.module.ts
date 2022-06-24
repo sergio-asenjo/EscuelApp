@@ -8,12 +8,16 @@ import { PasarAsistenciaPageRoutingModule } from './pasar-asistencia-routing.mod
 
 import { PasarAsistenciaPage } from './pasar-asistencia.page';
 
+
+import { SharedModule } from 'src/app/componentes/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PasarAsistenciaPageRoutingModule
+    PasarAsistenciaPageRoutingModule,
+    SharedModule
   ],
   declarations: [PasarAsistenciaPage]
 })
